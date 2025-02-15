@@ -1,7 +1,7 @@
 # ProMetaGCN
 
 ProMetaGCN is a model that integrates meta-learning, graph convolutional networks, and protein-protein interaction (PPI) data to assess immune status through plasma proteomics.
-![Workflow ](https://github.com/zhangbeibei-min/ProMetaGCN/tree/main/Workflow)
+
  
 # Installation
 
