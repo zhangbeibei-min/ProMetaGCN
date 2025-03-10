@@ -22,7 +22,7 @@ ProMetaGCN/
 │   ├── COVID19.csv            # COVID-19 Dataset2
 │   ├── HealthScore.csv        # Healthy control group data
 │   ├── NSCLC.csv              # Non-small cell lung cancer dataset
-│   └── Omicron.csv            # COVID-19 Dataset
+│   └── Omicron.csv            # COVID-19 Dataset1
 ├── Figure/                     # Visualization results
 │   └── Change of plasma protein number with predicted frequency.svg  # Protein quantity vs prediction frequency diagram
 └── Workflow/                   # System flowchart
