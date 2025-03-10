@@ -82,4 +82,4 @@ The model consists of two parts:
 ## Ciation
 Please cite our paper if ProMetaGCN is helpful. For more detailed research content, please refer to our paper.
 
-Zhang M, et al. ***Immune Status Assessment based on plasma proteomics with Meta Graph Convolutional Networks***.
+Zhang M, et al. ***Immune Status Assessment based on plasma proteomics with Meta Graph Convolutional Networks***.2025.
