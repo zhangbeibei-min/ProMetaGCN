@@ -26,7 +26,7 @@ ProMetaGCN/
 ├── Figure/                     # Visualization results
 │   └── Change of plasma protein number with predicted frequency.svg  # Protein quantity vs prediction frequency diagram
 └── Workflow/                   # System flowchart
-    └── Workflow.png           # Project architecture workflow diagram
+    └── Workflow.jpg           # Project architecture workflow diagram
   ```
 
 ##  **Procedure to Implement**
