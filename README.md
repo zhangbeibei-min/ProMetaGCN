@@ -3,19 +3,6 @@
 ProMetaGCN is a model that integrates meta-learning, graph convolutional networks, and protein-protein interaction (PPI) data to assess immune status through plasma proteomics.
 ![Workflow ](https://github.com/zhangbeibei-min/ProMetaGCN/tree/main/Workflow)
  
-# Installation
-
-## **[link](https://github.com/zhangbeibei-min/ProMetaGCN.git)**
-
-# Requirements
-
-- Python 3.7.6
-- sklearn 0.22.1
-- numpy 1.21.6
-- scipy 1.5.2
-- pandas 1.0.1
-- lightgbm 3.2.0
-- xgboost 1.5.2
 # Project structure
 
 ProMetaGCN/
@@ -44,8 +31,21 @@ ProMetaGCN/
 │   └── Change of plasma protein number with predicted frequency.svg  # Figure showing change of plasma protein number with predicted frequency
 └── Workflow/                   # Workflow folder
     └── Workflow.png           # Project workflow diagram
-
-# Usage
+#  **Procedure to Implement**
+## **1. Clone the Repository**
+```
+git clone https://github.com/zhangbeibei-min/ProMetaGCN.git
+cd ProMetaGCN
+```
+## **2. Set Up the Environment**
+- Python 3.7.6
+- sklearn 0.22.1
+- numpy 1.21.6
+- scipy 1.5.2
+- pandas 1.0.1
+- lightgbm 3.2.0
+- xgboost 1.5.2
+## 3.Usage
 
 The model consists of two parts:
 
@@ -66,10 +66,10 @@ The model consists of two parts:
    python Codes/Meta-GCN/LabelClass.py # Functions related to label classification
    python Codes/Meta-GCN/Label_ID_encode.py # Map labels to protein identifiers
      ```
-Use the code in the `Meta-GCN`folder. You can adjust the parameters as needed:
-```
-python Codes/Meta-GCN/citation.py --train_shot_0 10 --train_shot_1 5 --test_shot_0 100 --test_shot_1 35 --epochs 50 --lr 0.0006
-```
+  Use the code in the `Meta-GCN`folder. You can adjust the parameters as needed:
+  ```
+  python Codes/Meta-GCN/citation.py --train_shot_0 10 --train_shot_1 5 --test_shot_0 100 --test_shot_1 35 --epochs 50 --lr 0.0006
+  ```
 - **Step 2:  Compute Immune Status Score with ImmuneScorePrediction.py**
   -   Train and evaluate the model using the healthy dataset. According to the evaluation index, four machine learning methods with the best performance are obtained.
   ```
@@ -83,4 +83,5 @@ python Codes/Meta-GCN/citation.py --train_shot_0 10 --train_shot_1 5 --test_shot
  
 # Ciation
 Please cite our paper if ProMetaGCN is helpful. For more detailed research content, please refer to our paper.
-Zhang M, et al. **Immune Status Assessment based on plasma proteomics with Meta Graph Convolutional Networks**.
+
+Zhang M, et al. ***Immune Status Assessment based on plasma proteomics with Meta Graph Convolutional Networks***.
