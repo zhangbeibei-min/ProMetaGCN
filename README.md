@@ -2,7 +2,7 @@
 
 ProMetaGCN is a model that integrates meta-learning, graph convolutional networks, and protein-protein interaction (PPI) data to assess immune status through plasma proteomics.
 ![Workflow ](https://github.com/zhangbeibei-min/ProMetaGCN/tree/main/Workflow)
-# ProMetaGCN Project Structure Documentation
+## ProMetaGCN Project Structure Documentation
 ```plaintext
 ProMetaGCN/
 ├── Codes/                      # Core source code directory
@@ -29,13 +29,13 @@ ProMetaGCN/
     └── Workflow.png           # Project architecture workflow diagram
   ```
 
-#  **Procedure to Implement**
-## **1. Clone the Repository**
+##  **Procedure to Implement**
+### **1. Clone the Repository**
    ```
     git clone https://github.com/zhangbeibei-min/ProMetaGCN.git
     cd ProMetaGCN
   ```
-## **2. Set Up the Environment**
+### **2. Set Up the Environment**
 - Python 3.7.6
 - sklearn 0.22.1
 - numpy 1.21.6
@@ -43,7 +43,7 @@ ProMetaGCN/
 - pandas 1.0.1
 - lightgbm 3.2.0
 - xgboost 1.5.2
-## 3.Usage
+### 3.Usage
 
 The model consists of two parts:
 
@@ -79,7 +79,7 @@ The model consists of two parts:
   python Codes/ImmunescorePrediction/ImmuneStatusScoreValTest.py
   ```
  
-# Ciation
+## Ciation
 Please cite our paper if ProMetaGCN is helpful. For more detailed research content, please refer to our paper.
 
 Zhang M, et al. ***Immune Status Assessment based on plasma proteomics with Meta Graph Convolutional Networks***.
