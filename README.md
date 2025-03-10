@@ -4,33 +4,8 @@ ProMetaGCN is a model that integrates meta-learning, graph convolutional network
 ![Workflow ](https://github.com/zhangbeibei-min/ProMetaGCN/tree/main/Workflow)
  
 # Project structure
+[Project structure](https://github.com/zhangbeibei-min/ProMetaGCN)
 
-ProMetaGCN/
-├── Codes/                      # Source code directory
-│   ├── ImmunescorePrediction/  # Immune status prediction code
-│   │   ├── ImmuneScorePrediction.py  # Main program for immune status prediction
-│   │   └── ImmuneStatusScoreValTest.py  # Prediction for external validation sets
-│   ├── Meta-GCN/               # Meta-GCN code directory
-│    │    ├── args.py             # Parameter configuration file
-│    │    ├── citation.py         # Main program for model training and testing
-│    │    ├── cytokine_list.py    # Extract unique protein names from protein interactions
-│     │   ├── cytokine_number_name.py  # Generate two CSV files for protein ID-node number mapping and node number-protein name correspondence
-│      │  ├── LabelClass.py       # Functions related to label classification
-│       │ ├── Label_ID_encode.py  # Map labels to protein identifiers
-│      │  ├── metrics.py          # Evaluation metric calculation functions
-│     │   ├── models.py           # Model definitions
-│    │    ├── normalization.py    # Adjacency matrix normalization methods
-│     │ ├── utils.py            # Collection of utility functions
-│     │   └── Data/               # Data directory（Protein labeling and interaction relationship data）
-├── Data/                       # Data folder
-│   ├── COVID19.csv            # COVID19 dataset 2
-│   ├── HealthScore.csv         # Healthy data
-│   ├── NSCLC.csv  # Lung cancer data
-│   └── Omicron.csv           # COVID19 dataset 1
-├── Figure/                     # Figure folder
-│   └── Change of plasma protein number with predicted frequency.svg  # Figure showing change of plasma protein number with predicted frequency
-└── Workflow/                   # Workflow folder
-    └── Workflow.png           # Project workflow diagram
 #  **Procedure to Implement**
 ## **1. Clone the Repository**
 ```
@@ -84,4 +59,4 @@ The model consists of two parts:
 # Ciation
 Please cite our paper if ProMetaGCN is helpful. For more detailed research content, please refer to our paper.
 
-Zhang M, et al. ***Immune Status Assessment based on plasma proteomics with Meta Graph Convolutional Networks***.
+Zhang M, et al. ***Immune Status Assessment based on plasma proteomics with Meta Graph Convolutional Networks***.2025.
