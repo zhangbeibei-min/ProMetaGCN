@@ -12,46 +12,46 @@
 @time: 2024/3/15 17:06
 """
 # ###Label1已经code注释掉
-# import csv
-#
-# # 读取Label1.csv的第一列内容
-# label1_values = []
-# with open(r'.\Meta-GCN\Data\Label1.csv', 'r') as label1_file:
-#     label1_reader = csv.reader(label1_file)
-#     for row in label1_reader:
-#         label1_values.append(row[0])
-#
-# # 读取Cytokine_name_code_Idnumber.csv的第二列和第三列内容
-# cytokine_dict = {}
-# with open(r'.\Meta-GCN\Data\LabelClass\Cytokine_name_code_Idnumber.csv', 'r') as cytokine_file:
-#     cytokine_reader = csv.reader(cytokine_file)
-#     for row in cytokine_reader:
-#         cytokine_dict[row[2]] = row[0]
-#
-# # 比较并输出结果
-# for value in label1_values:
-#     if value in cytokine_dict:
-#         print(f"找到匹配：{value} 对应的值为 {cytokine_dict[value]}")
-#
-# # 存储匹配结果的列表
-# matched_results = []
-#
-# # 读取Label1.csv的第一列内容
-# with open(r'.\Meta-GCN\Data\Label1.csv', 'r') as label1_file:
-#     label1_reader = csv.reader(label1_file)
-#     for row in label1_reader:
-#         value = row[0]
-#         if value in cytokine_dict:
-#             matched_results.append([value, cytokine_dict[value]])
-#
-# # 将匹配结果写入label1encode.csv文件
-# with open(r'.\Meta-GCN\Data\label1encode.csv', 'w', newline='') as csvfile:
-#     csv_writer = csv.writer(csvfile)
-#     csv_writer.writerow(['Value', 'Matched Value'])
-#     for result in matched_results:
-#         csv_writer.writerow(result)
-#
-# print("匹配结果已保存到label1encode.csv文件中。")
+import csv
+
+# 读取Label1.csv的第一列内容
+label1_values = []
+with open(r'.\Meta-GCN\Data\Label1.csv', 'r') as label1_file:
+    label1_reader = csv.reader(label1_file)
+    for row in label1_reader:
+        label1_values.append(row[0])
+
+# 读取Cytokine_name_code_Idnumber.csv的第二列和第三列内容
+cytokine_dict = {}
+with open(r'.\Meta-GCN\Data\LabelClass\Cytokine_name_code_Idnumber.csv', 'r') as cytokine_file:
+    cytokine_reader = csv.reader(cytokine_file)
+    for row in cytokine_reader:
+        cytokine_dict[row[2]] = row[0]
+
+# 比较并输出结果
+for value in label1_values:
+    if value in cytokine_dict:
+        print(f"找到匹配：{value} 对应的值为 {cytokine_dict[value]}")
+
+# 存储匹配结果的列表
+matched_results = []
+
+# 读取Label1.csv的第一列内容
+with open(r'.\Meta-GCN\Data\Label1.csv', 'r') as label1_file:
+    label1_reader = csv.reader(label1_file)
+    for row in label1_reader:
+        value = row[0]
+        if value in cytokine_dict:
+            matched_results.append([value, cytokine_dict[value]])
+
+# 将匹配结果写入label1encode.csv文件
+with open(r'.\Meta-GCN\Data\label1encode.csv', 'w', newline='') as csvfile:
+    csv_writer = csv.writer(csvfile)
+    csv_writer.writerow(['Value', 'Matched Value'])
+    for result in matched_results:
+        csv_writer.writerow(result)
+
+print("匹配结果已保存到label1encode.csv文件中。")
 
 
 
